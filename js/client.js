@@ -13,26 +13,15 @@ $(function(){
         toast.play();
 
         $('#toast').toast({ autohide: false }).toast('show');
+        
+        
+
 
         });
     $('.code').on('keydown', function(e){
-        e.preventDefault();
         if (e.keyCode === 27){
             $("#toast").toast({autohide: false}).toast('dispose');
         }
-    });
-
-    $('.code').click(function(e){
-        var productName;
-        var discountCode;
-        e.preventDefault();
-        switch($('.code').index(this)){
-            case 0:
-                productName = $('div').data("Chef Anton's Italian Seasoning")
-                break;
-        }
-        
-
     });
 
 
